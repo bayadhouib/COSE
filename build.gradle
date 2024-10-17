@@ -1,0 +1,65 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+version '1.0-COSE'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.jena:apache-jena-libs:4.7.0'
+    implementation 'org.apache.jena:jena-core:4.7.0'
+    implementation 'org.apache.jena:jena-arq:4.7.0'
+    implementation 'org.apache.jena:jena-tdb2:4.7.0'
+    implementation 'org.apache.jena:jena-shacl:4.7.0'
+    implementation 'org.eclipse.rdf4j:rdf4j-model:3.7.4'
+    implementation 'org.eclipse.rdf4j:rdf4j-rio-api:3.7.4'
+    implementation 'org.eclipse.rdf4j:rdf4j-rio-turtle:3.7.4'
+    implementation 'org.eclipse.rdf4j:rdf4j-rio-rdfxml:3.7.4'
+    implementation 'org.eclipse.rdf4j:rdf4j-rio-ntriples:3.7.4'
+    implementation 'org.eclipse.rdf4j:rdf4j-rio-nquads:3.7.4'
+    implementation 'org.eclipse.rdf4j:rdf4j-rio-jsonld:3.7.4'
+    implementation 'org.eclipse.rdf4j:rdf4j-rio-trig:3.7.4'
+    implementation 'org.eclipse.rdf4j:rdf4j-shacl:3.7.4'
+    implementation 'org.eclipse.rdf4j:rdf4j-repository-sail:3.7.4'
+    implementation 'org.jgrapht:jgrapht-core:1.5.1'
+    implementation 'org.semanticweb.yars:nxparser:4.0.0'
+    implementation 'org.semanticweb.yars:nxparser-model:4.0.0'
+    implementation 'org.semanticweb.yars:nxparser-parsers:4.0.0'
+    implementation 'com.google.guava:guava:30.1-jre'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation 'org.apache.commons:commons-collections4:4.4'
+    implementation 'org.eclipse.rdf4j:rdf4j-repository-api:3.7.4'
+    implementation 'org.eclipse.rdf4j:rdf4j-repository-sparql:3.7.4'
+    implementation 'commons-validator:commons-validator:1.9.0'
+    implementation 'org.neo4j.driver:neo4j-java-driver:4.3.4'
+    implementation 'com.ontotext.graphdb:graphdb-free-runtime:9.3.0'
+    implementation 'com.opencsv:opencsv:5.5.1'
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
+    implementation 'net.sourceforge.owlapi:owlapi-distribution:5.1.17'
+    implementation files('libs/turtle-formatter-snapshot.jar')
+    implementation files('libs/nxparser-model-4.0.0.jar')
+    implementation files('libs/nxparser-parsers-4.0.0.jar')
+    implementation files('libs/turtle-formatter-snapshot.jar')
+
+}
+
+application {
+    mainClassName = 'cs.Main'
+}
+
+shadowJar {
+    mergeServiceFiles()
+    manifest {
+        attributes 'Main-Class': 'cs.Main'
+    }
+    zip64 true
+}

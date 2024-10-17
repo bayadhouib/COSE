@@ -1,0 +1,1070 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://shaclshapes.org/ClassShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "255"^^xsd:int ;
+  <http://shaclshapes.org/support> "272"^^xsd:int ;
+  <http://shaclshapes.org/support> "282"^^xsd:int ;
+  <http://shaclshapes.org/support> "319"^^xsd:int ;
+  <http://shaclshapes.org/support> "334"^^xsd:int ;
+  <http://shaclshapes.org/support> "735"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/commentClassShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/disjointWithClassShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/equivalentClassClassShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeClassShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/labelClassShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/subClassOfClassShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/unionOfClassShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/wasDerivedFromClassShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> owl:Class .
+
+<http://shaclshapes.org/DatatypePropertyShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "1024"^^xsd:int ;
+  <http://shaclshapes.org/support> "1721"^^xsd:int ;
+  <http://shaclshapes.org/support> "336"^^xsd:int ;
+  <http://shaclshapes.org/support> "673"^^xsd:int ;
+  <http://shaclshapes.org/support> "706"^^xsd:int ;
+  <http://shaclshapes.org/support> "893"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/commentDatatypePropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/domainDatatypePropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/equivalentPropertyDatatypePropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeDatatypePropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/labelDatatypePropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/rangeDatatypePropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/subPropertyOfDatatypePropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/wasDerivedFromDatatypePropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> owl:DatatypeProperty .
+
+<http://shaclshapes.org/FunctionalPropertyShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "18"^^xsd:int ;
+  <http://shaclshapes.org/support> "22"^^xsd:int ;
+  <http://shaclshapes.org/support> "30"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/domainFunctionalPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/equivalentPropertyFunctionalPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeFunctionalPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/labelFunctionalPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/rangeFunctionalPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/subPropertyOfFunctionalPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/wasDerivedFromFunctionalPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> owl:FunctionalProperty .
+
+<http://shaclshapes.org/ObjectPropertyShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "1098"^^xsd:int ;
+  <http://shaclshapes.org/support> "1144"^^xsd:int ;
+  <http://shaclshapes.org/support> "384"^^xsd:int ;
+  <http://shaclshapes.org/support> "601"^^xsd:int ;
+  <http://shaclshapes.org/support> "629"^^xsd:int ;
+  <http://shaclshapes.org/support> "750"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/commentObjectPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/domainObjectPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/equivalentPropertyObjectPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeObjectPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/labelObjectPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/rangeObjectPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/subPropertyOfObjectPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/wasDerivedFromObjectPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> owl:ObjectProperty .
+
+<http://shaclshapes.org/OntologyShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/commentOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/creatorOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/descriptionOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/homepageOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/issuedOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/licenseOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/modifiedOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/preferredNamespacePrefixOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/preferredNamespaceUriOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/publisherOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/sourceOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/titleOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/versionInfoOntologyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> owl:Ontology .
+
+<http://shaclshapes.org/PropertyShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "2681"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/commentPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/domainPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/equivalentPropertyPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypePropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/labelPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/rangePropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/subPropertyOfPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/wasDerivedFromPropertyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> rdf:Property .
+
+<http://shaclshapes.org/VocabularyShape> rdf:type <http://www.w3.org/ns/shacl#NodeShape> ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/commentVocabularyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/creatorVocabularyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/descriptionVocabularyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/homepageVocabularyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/instanceTypeVocabularyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/issuedVocabularyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/licenseVocabularyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/modifiedVocabularyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/preferredNamespacePrefixVocabularyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/preferredNamespaceUriVocabularyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/publisherVocabularyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/sourceVocabularyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/titleVocabularyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#property> <http://shaclshapes.org/versionInfoVocabularyShapeProperty> ;
+  <http://www.w3.org/ns/shacl#targetClass> <http://purl.org/vocommons/voaf#Vocabulary> .
+
+<http://shaclshapes.org/commentClassShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1.9216E-1 ;
+  <http://shaclshapes.org/confidence> 2.0956E-1 ;
+  <http://shaclshapes.org/confidence> 2.5392E-1 ;
+  <http://shaclshapes.org/confidence> 3.9864E-1 ;
+  <http://shaclshapes.org/support> "293"^^xsd:int ;
+  <http://shaclshapes.org/support> "49"^^xsd:int ;
+  <http://shaclshapes.org/support> "57"^^xsd:int ;
+  <http://shaclshapes.org/support> "81"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  <http://www.w3.org/ns/shacl#path> rdfs:comment .
+
+<http://shaclshapes.org/commentDatatypePropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1.6349E-1 ;
+  <http://shaclshapes.org/confidence> 1.7432E-1 ;
+  <http://shaclshapes.org/confidence> 4.9034E-2 ;
+  <http://shaclshapes.org/confidence> 6.0907E-2 ;
+  <http://shaclshapes.org/support> "146"^^xsd:int ;
+  <http://shaclshapes.org/support> "300"^^xsd:int ;
+  <http://shaclshapes.org/support> "33"^^xsd:int ;
+  <http://shaclshapes.org/support> "43"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  <http://www.w3.org/ns/shacl#path> rdfs:comment .
+
+<http://shaclshapes.org/commentObjectPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1.24E-1 ;
+  <http://shaclshapes.org/confidence> 1.867E-1 ;
+  <http://shaclshapes.org/confidence> 2.6622E-2 ;
+  <http://shaclshapes.org/confidence> 5.7234E-2 ;
+  <http://shaclshapes.org/support> "16"^^xsd:int ;
+  <http://shaclshapes.org/support> "205"^^xsd:int ;
+  <http://shaclshapes.org/support> "36"^^xsd:int ;
+  <http://shaclshapes.org/support> "93"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  <http://www.w3.org/ns/shacl#path> rdfs:comment .
+
+<http://shaclshapes.org/commentOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> rdfs:comment .
+
+<http://shaclshapes.org/commentPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1.865E-1 ;
+  <http://shaclshapes.org/support> "500"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  <http://www.w3.org/ns/shacl#path> rdfs:comment .
+
+<http://shaclshapes.org/commentVocabularyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> rdfs:comment .
+
+<http://shaclshapes.org/creatorOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:creator .
+
+<http://shaclshapes.org/creatorVocabularyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:creator .
+
+<http://shaclshapes.org/descriptionOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:description .
+
+<http://shaclshapes.org/descriptionVocabularyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:description .
+
+<http://shaclshapes.org/disjointWithClassShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ClassShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 2.8571E-2 ;
+    <http://shaclshapes.org/support> "21"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 4.0816E-3 ;
+    <http://shaclshapes.org/support> "3"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> owl:disjointWith .
+
+<http://shaclshapes.org/domainDatatypePropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/confidence> 8.3428E-1 ;
+  <http://shaclshapes.org/confidence> 8.425E-1 ;
+  <http://shaclshapes.org/confidence> 8.589E-1 ;
+  <http://shaclshapes.org/support> "1024"^^xsd:int ;
+  <http://shaclshapes.org/support> "336"^^xsd:int ;
+  <http://shaclshapes.org/support> "567"^^xsd:int ;
+  <http://shaclshapes.org/support> "589"^^xsd:int ;
+  <http://shaclshapes.org/support> "767"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> owl:Class ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ClassShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 8.5648E-1 ;
+    <http://shaclshapes.org/support> "1474"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 1.8013E-2 ;
+    <http://shaclshapes.org/support> "31"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> rdfs:domain .
+
+<http://shaclshapes.org/domainFunctionalPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 6.6667E-1 ;
+  <http://shaclshapes.org/confidence> 7.2727E-1 ;
+  <http://shaclshapes.org/confidence> 7.6667E-1 ;
+  <http://shaclshapes.org/support> "12"^^xsd:int ;
+  <http://shaclshapes.org/support> "16"^^xsd:int ;
+  <http://shaclshapes.org/support> "23"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> owl:Class ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ClassShape> ;
+  <http://www.w3.org/ns/shacl#path> rdfs:domain .
+
+<http://shaclshapes.org/domainObjectPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/confidence> 7.6206E-1 ;
+  <http://shaclshapes.org/confidence> 8.0286E-1 ;
+  <http://shaclshapes.org/confidence> 8.1333E-1 ;
+  <http://shaclshapes.org/support> "384"^^xsd:int ;
+  <http://shaclshapes.org/support> "458"^^xsd:int ;
+  <http://shaclshapes.org/support> "505"^^xsd:int ;
+  <http://shaclshapes.org/support> "610"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> owl:Class ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ClassShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 9.9913E-1 ;
+    <http://shaclshapes.org/support> "1143"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 8.7413E-4 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 8.1876E-1 ;
+    <http://shaclshapes.org/support> "899"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 1.5483E-2 ;
+    <http://shaclshapes.org/support> "17"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> rdfs:domain .
+
+<http://shaclshapes.org/domainPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ClassShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 8.3364E-1 ;
+    <http://shaclshapes.org/support> "2235"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 1.7904E-2 ;
+    <http://shaclshapes.org/support> "48"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> rdfs:domain .
+
+<http://shaclshapes.org/equivalentClassClassShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1.3793E-1 ;
+  <http://shaclshapes.org/confidence> 3.6765E-3 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://shaclshapes.org/support> "44"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ClassShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 1.3605E-3 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 4.8435E-1 ;
+    <http://shaclshapes.org/support> "356"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> owl:equivalentClass .
+
+<http://shaclshapes.org/equivalentPropertyDatatypePropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1.0078E-2 ;
+  <http://shaclshapes.org/support> "9"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/PropertyShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 1.1621E-3 ;
+    <http://shaclshapes.org/support> "2"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> rdf:Property ;
+  ] [
+    <http://shaclshapes.org/confidence> 1.1621E-3 ;
+    <http://shaclshapes.org/support> "2"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:DatatypeProperty ;
+  ] [
+    <http://shaclshapes.org/confidence> 3.835E-2 ;
+    <http://shaclshapes.org/support> "66"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> owl:equivalentProperty .
+
+<http://shaclshapes.org/equivalentPropertyFunctionalPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1.3333E-1 ;
+  <http://shaclshapes.org/confidence> 9.0909E-2 ;
+  <http://shaclshapes.org/support> "2"^^xsd:int ;
+  <http://shaclshapes.org/support> "4"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> owl:equivalentProperty .
+
+<http://shaclshapes.org/equivalentPropertyObjectPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 2.9333E-2 ;
+  <http://shaclshapes.org/support> "22"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/PropertyShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 2.7322E-3 ;
+    <http://shaclshapes.org/support> "3"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:ObjectProperty ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.7322E-3 ;
+    <http://shaclshapes.org/support> "3"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> rdf:Property ;
+  ] [
+    <http://shaclshapes.org/confidence> 1.02E-1 ;
+    <http://shaclshapes.org/support> "112"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> owl:equivalentProperty .
+
+<http://shaclshapes.org/equivalentPropertyPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/PropertyShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 1.119E-3 ;
+    <http://shaclshapes.org/support> "3"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:ObjectProperty ;
+  ] [
+    <http://shaclshapes.org/confidence> 1.865E-3 ;
+    <http://shaclshapes.org/support> "5"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> rdf:Property ;
+  ] [
+    <http://shaclshapes.org/confidence> 7.4599E-4 ;
+    <http://shaclshapes.org/support> "2"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:DatatypeProperty ;
+  ] [
+    <http://shaclshapes.org/confidence> 6.6393E-2 ;
+    <http://shaclshapes.org/support> "178"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> owl:equivalentProperty .
+
+<http://shaclshapes.org/homepageOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://xmlns.com/foaf/0.1/homepage> .
+
+<http://shaclshapes.org/homepageVocabularyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://xmlns.com/foaf/0.1/homepage> .
+
+<http://shaclshapes.org/instanceTypeClassShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "255"^^xsd:int ;
+  <http://shaclshapes.org/support> "272"^^xsd:int ;
+  <http://shaclshapes.org/support> "282"^^xsd:int ;
+  <http://shaclshapes.org/support> "319"^^xsd:int ;
+  <http://shaclshapes.org/support> "334"^^xsd:int ;
+  <http://shaclshapes.org/support> "735"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( owl:Class ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:Class ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:Class ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:Class ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:Class ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:Class ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:Class ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:Class ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeDatatypePropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1024"^^xsd:int ;
+  <http://shaclshapes.org/support> "1721"^^xsd:int ;
+  <http://shaclshapes.org/support> "336"^^xsd:int ;
+  <http://shaclshapes.org/support> "673"^^xsd:int ;
+  <http://shaclshapes.org/support> "706"^^xsd:int ;
+  <http://shaclshapes.org/support> "893"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( owl:DatatypeProperty ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:DatatypeProperty ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:DatatypeProperty ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:DatatypeProperty ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:DatatypeProperty ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:DatatypeProperty ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:DatatypeProperty ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:DatatypeProperty ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeFunctionalPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "18"^^xsd:int ;
+  <http://shaclshapes.org/support> "22"^^xsd:int ;
+  <http://shaclshapes.org/support> "30"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( owl:FunctionalProperty ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:FunctionalProperty ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:FunctionalProperty ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:FunctionalProperty ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeObjectPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1098"^^xsd:int ;
+  <http://shaclshapes.org/support> "1144"^^xsd:int ;
+  <http://shaclshapes.org/support> "384"^^xsd:int ;
+  <http://shaclshapes.org/support> "601"^^xsd:int ;
+  <http://shaclshapes.org/support> "629"^^xsd:int ;
+  <http://shaclshapes.org/support> "750"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( owl:ObjectProperty ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:ObjectProperty ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:ObjectProperty ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:ObjectProperty ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:ObjectProperty ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:ObjectProperty ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:ObjectProperty ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:ObjectProperty ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( owl:Ontology ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:Ontology ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:Ontology ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:Ontology ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:Ontology ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:Ontology ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:Ontology ) ;
+  <http://www.w3.org/ns/shacl#in> ( owl:Ontology ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypePropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "2681"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( rdf:Property ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/instanceTypeVocabularyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#in> ( <http://purl.org/vocommons/voaf#Vocabulary> ) ;
+  <http://www.w3.org/ns/shacl#path> rdf:type .
+
+<http://shaclshapes.org/issuedOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:issued .
+
+<http://shaclshapes.org/issuedVocabularyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:issued .
+
+<http://shaclshapes.org/labelClassShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/confidence> 6.1078E-1 ;
+  <http://shaclshapes.org/confidence> 6.1702E-1 ;
+  <http://shaclshapes.org/support> "174"^^xsd:int ;
+  <http://shaclshapes.org/support> "204"^^xsd:int ;
+  <http://shaclshapes.org/support> "255"^^xsd:int ;
+  <http://shaclshapes.org/support> "272"^^xsd:int ;
+  <http://shaclshapes.org/support> "319"^^xsd:int ;
+  <http://shaclshapes.org/support> "735"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> rdfs:label .
+
+<http://shaclshapes.org/labelDatatypePropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/confidence> 9.9858E-1 ;
+  <http://shaclshapes.org/support> "1024"^^xsd:int ;
+  <http://shaclshapes.org/support> "1721"^^xsd:int ;
+  <http://shaclshapes.org/support> "336"^^xsd:int ;
+  <http://shaclshapes.org/support> "673"^^xsd:int ;
+  <http://shaclshapes.org/support> "705"^^xsd:int ;
+  <http://shaclshapes.org/support> "893"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> rdfs:label .
+
+<http://shaclshapes.org/labelFunctionalPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "18"^^xsd:int ;
+  <http://shaclshapes.org/support> "22"^^xsd:int ;
+  <http://shaclshapes.org/support> "30"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> rdfs:label .
+
+<http://shaclshapes.org/labelObjectPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1098"^^xsd:int ;
+  <http://shaclshapes.org/support> "1144"^^xsd:int ;
+  <http://shaclshapes.org/support> "384"^^xsd:int ;
+  <http://shaclshapes.org/support> "601"^^xsd:int ;
+  <http://shaclshapes.org/support> "629"^^xsd:int ;
+  <http://shaclshapes.org/support> "750"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> rdfs:label .
+
+<http://shaclshapes.org/labelPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "2681"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> rdfs:label .
+
+<http://shaclshapes.org/licenseOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://creativecommons.org/ns#license> .
+
+<http://shaclshapes.org/licenseVocabularyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://creativecommons.org/ns#license> .
+
+<http://shaclshapes.org/modifiedOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:modified .
+
+<http://shaclshapes.org/modifiedVocabularyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:modified .
+
+<http://shaclshapes.org/preferredNamespacePrefixOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://purl.org/vocab/vann/preferredNamespacePrefix> .
+
+<http://shaclshapes.org/preferredNamespacePrefixVocabularyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://purl.org/vocab/vann/preferredNamespacePrefix> .
+
+<http://shaclshapes.org/preferredNamespaceUriOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://purl.org/vocab/vann/preferredNamespaceUri> .
+
+<http://shaclshapes.org/preferredNamespaceUriVocabularyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://purl.org/vocab/vann/preferredNamespaceUri> .
+
+<http://shaclshapes.org/publisherOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:publisher .
+
+<http://shaclshapes.org/publisherVocabularyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:publisher .
+
+<http://shaclshapes.org/rangeDatatypePropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/confidence> 9.9702E-1 ;
+  <http://shaclshapes.org/support> "1024"^^xsd:int ;
+  <http://shaclshapes.org/support> "1721"^^xsd:int ;
+  <http://shaclshapes.org/support> "335"^^xsd:int ;
+  <http://shaclshapes.org/support> "706"^^xsd:int ;
+  <http://shaclshapes.org/support> "893"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DatatypePropertyShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 1.3373E-2 ;
+    <http://shaclshapes.org/support> "9"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:DatatypeProperty ;
+  ] [
+    <http://shaclshapes.org/confidence> 9.8663E-1 ;
+    <http://shaclshapes.org/support> "664"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> rdfs:range .
+
+<http://shaclshapes.org/rangeFunctionalPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "18"^^xsd:int ;
+  <http://shaclshapes.org/support> "22"^^xsd:int ;
+  <http://shaclshapes.org/support> "30"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> rdfs:range .
+
+<http://shaclshapes.org/rangeObjectPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ClassShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 7.3497E-1 ;
+    <http://shaclshapes.org/support> "807"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 1.6393E-2 ;
+    <http://shaclshapes.org/support> "18"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 8.243E-1 ;
+    <http://shaclshapes.org/support> "943"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 1.8007E-1 ;
+    <http://shaclshapes.org/support> "206"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 7.6312E-1 ;
+    <http://shaclshapes.org/support> "480"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 1.4308E-2 ;
+    <http://shaclshapes.org/support> "9"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 7.8906E-1 ;
+    <http://shaclshapes.org/support> "303"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.1094E-1 ;
+    <http://shaclshapes.org/support> "81"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 7.8906E-1 ;
+    <http://shaclshapes.org/support> "303"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.1094E-1 ;
+    <http://shaclshapes.org/support> "81"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 7.8906E-1 ;
+    <http://shaclshapes.org/support> "303"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.1094E-1 ;
+    <http://shaclshapes.org/support> "81"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 6.9733E-1 ;
+    <http://shaclshapes.org/support> "523"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 1.2E-2 ;
+    <http://shaclshapes.org/support> "9"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 7.7537E-1 ;
+    <http://shaclshapes.org/support> "466"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 1.4975E-2 ;
+    <http://shaclshapes.org/support> "9"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> rdfs:range .
+
+<http://shaclshapes.org/rangePropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ClassShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 3.0101E-1 ;
+    <http://shaclshapes.org/support> "807"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 5.9717E-1 ;
+    <http://shaclshapes.org/support> "1601"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> rdfs:range .
+
+<http://shaclshapes.org/sourceOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:source .
+
+<http://shaclshapes.org/sourceVocabularyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:source .
+
+<http://shaclshapes.org/subClassOfClassShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ClassShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 8.7774E-1 ;
+    <http://shaclshapes.org/support> "280"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 1E0 ;
+    <http://shaclshapes.org/support> "319"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 5.3191E-1 ;
+    <http://shaclshapes.org/support> "150"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 8.5106E-2 ;
+    <http://shaclshapes.org/support> "24"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 5.3191E-1 ;
+    <http://shaclshapes.org/support> "150"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 8.5106E-2 ;
+    <http://shaclshapes.org/support> "24"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 8.8971E-1 ;
+    <http://shaclshapes.org/support> "242"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 1.1029E-1 ;
+    <http://shaclshapes.org/support> "30"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 5.3191E-1 ;
+    <http://shaclshapes.org/support> "150"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 8.5106E-2 ;
+    <http://shaclshapes.org/support> "24"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 8.902E-1 ;
+    <http://shaclshapes.org/support> "227"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 1.098E-1 ;
+    <http://shaclshapes.org/support> "28"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 5.3892E-1 ;
+    <http://shaclshapes.org/support> "180"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 7.1856E-2 ;
+    <http://shaclshapes.org/support> "24"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 9.2925E-1 ;
+    <http://shaclshapes.org/support> "683"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 7.8912E-2 ;
+    <http://shaclshapes.org/support> "58"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> rdfs:subClassOf .
+
+<http://shaclshapes.org/subPropertyOfDatatypePropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 5.4492E-1 ;
+  <http://shaclshapes.org/support> "558"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> owl:DatatypeProperty ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/DatatypePropertyShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 5.8106E-4 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:ObjectProperty ;
+  ] [
+    <http://shaclshapes.org/confidence> 1.3945E-2 ;
+    <http://shaclshapes.org/support> "24"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> rdf:Property ;
+  ] [
+    <http://shaclshapes.org/confidence> 1.3364E-2 ;
+    <http://shaclshapes.org/support> "23"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:DatatypeProperty ;
+  ] [
+    <http://shaclshapes.org/confidence> 1.2202E-2 ;
+    <http://shaclshapes.org/support> "21"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> rdfs:subPropertyOf .
+
+<http://shaclshapes.org/subPropertyOfFunctionalPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/PropertyShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 3.3333E-2 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> rdf:Property ;
+  ] [
+    <http://shaclshapes.org/confidence> 3.3333E-2 ;
+    <http://shaclshapes.org/support> "1"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:DatatypeProperty ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> rdfs:subPropertyOf .
+
+<http://shaclshapes.org/subPropertyOfObjectPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 5.6731E-1 ;
+  <http://shaclshapes.org/support> "649"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#class> owl:ObjectProperty ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/ObjectPropertyShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 1.8215E-3 ;
+    <http://shaclshapes.org/support> "2"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.7322E-2 ;
+    <http://shaclshapes.org/support> "30"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:ObjectProperty ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.7322E-2 ;
+    <http://shaclshapes.org/support> "30"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> rdf:Property ;
+  ] [
+    <http://shaclshapes.org/confidence> 8.0692E-1 ;
+    <http://shaclshapes.org/support> "886"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> rdfs:subPropertyOf .
+
+<http://shaclshapes.org/subPropertyOfPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://www.w3.org/ns/shacl#node> <http://shaclshapes.org/PropertyShape> ;
+  <http://www.w3.org/ns/shacl#or> ( [
+    <http://shaclshapes.org/confidence> 7.4599E-4 ;
+    <http://shaclshapes.org/support> "2"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:Class ;
+  ] [
+    <http://shaclshapes.org/confidence> 1.1563E-2 ;
+    <http://shaclshapes.org/support> "31"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:ObjectProperty ;
+  ] [
+    <http://shaclshapes.org/confidence> 2.0142E-2 ;
+    <http://shaclshapes.org/support> "54"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> rdf:Property ;
+  ] [
+    <http://shaclshapes.org/confidence> 8.5789E-3 ;
+    <http://shaclshapes.org/support> "23"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+    <http://www.w3.org/ns/shacl#class> owl:DatatypeProperty ;
+  ] [
+    <http://shaclshapes.org/confidence> 3.3831E-1 ;
+    <http://shaclshapes.org/support> "907"^^xsd:int ;
+    <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  ] ) ;
+  <http://www.w3.org/ns/shacl#path> rdfs:subPropertyOf .
+
+<http://shaclshapes.org/titleOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:title .
+
+<http://shaclshapes.org/titleVocabularyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> dcterms:title .
+
+<http://shaclshapes.org/unionOfClassShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 3.8298E-1 ;
+  <http://shaclshapes.org/confidence> 3.8922E-1 ;
+  <http://shaclshapes.org/support> "108"^^xsd:int ;
+  <http://shaclshapes.org/support> "130"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> owl:unionOf .
+
+<http://shaclshapes.org/versionInfoOntologyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> owl:versionInfo .
+
+<http://shaclshapes.org/versionInfoVocabularyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+  <http://www.w3.org/ns/shacl#datatype> rdf:langString ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> owl:versionInfo .
+
+<http://shaclshapes.org/wasDerivedFromClassShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "735"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#wasDerivedFrom> .
+
+<http://shaclshapes.org/wasDerivedFromDatatypePropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 9.1981E-1 ;
+  <http://shaclshapes.org/support> "1583"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#wasDerivedFrom> .
+
+<http://shaclshapes.org/wasDerivedFromFunctionalPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "30"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#wasDerivedFrom> .
+
+<http://shaclshapes.org/wasDerivedFromObjectPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "1098"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#wasDerivedFrom> .
+
+<http://shaclshapes.org/wasDerivedFromPropertyShapeProperty> rdf:type <http://www.w3.org/ns/shacl#PropertyShape> ;
+  <http://shaclshapes.org/confidence> 1E0 ;
+  <http://shaclshapes.org/support> "2681"^^xsd:int ;
+  <http://www.w3.org/ns/shacl#NodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+  <http://www.w3.org/ns/shacl#minCount> 1 ;
+  <http://www.w3.org/ns/shacl#path> <http://www.w3.org/ns/prov#wasDerivedFrom> .
+
+
